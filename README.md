@@ -1,5 +1,30 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Project Summary
+
+This project meets the following requirements:
+
+- **Built with RN CLI Template:** The project was created using the React Native CLI template.
+- **No Third-Party UI Components:** Only official React Native components and default browser libraries were used; no third-party UI components were included.
+- **Infinite Scrolling List:** The app displays an infinite scrolling list of Github Gists using the provided API.
+
+#### UI Details:
+
+- The user's profile image is displayed on the left, sourced from `owner.avatar_url`.
+- The first file name in the Gist is displayed next to the avatar.
+
+#### Performance:
+
+- **Optimized FlatList Configurations:** The `FlatList` is configured with optimized render settings and memoized calculations to enhance performance.
+- **PreprocessGist Utility Function:** A utility function (`preprocessGist`) was implemented for testability and to avoid unnecessary calculations during rendering.
+
+### TODO / Possible Enhancements:
+
+- Adding tests using JUnit and Detox.
+- Improving component modularity by adopting Atomic Design principles and splitting components and templates (MVC pattern) for better testability.
+- Error handling / ( Network failure etc )
+- Themes 
+
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
