@@ -21,4 +21,5 @@ export interface Gist {
   owner: Owner;
   truncated: boolean;
   firstFileName?: string;
+  uniqueId: string;
 }
